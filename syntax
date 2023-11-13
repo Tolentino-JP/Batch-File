@@ -1,0 +1,68 @@
+:: comment
+:: /p for input
+:: /a for int
+:: /L in loop is for int
+
+::remove garbage
+@echo off   
+
+
+:: array
+
+::set fruits=apple banana mango
+::
+::for %%i in (%fruits%) do (
+::    echo %%i
+::)
+
+
+
+
+:: for loop (start,increment,end)
+
+::for /L %%i in (2,1,10) do (
+::    echo %%i
+::)
+
+
+
+
+
+
+:: if else
+:::one
+::set /p number=Enter your name: 
+::
+::if %number% gtr 5 (
+::    echo %number% is greater than 5.
+::) else if %number% lss 5 (
+::    echo %number% is less than 5.
+::) else (
+::    echo %number% is equal to 5.
+::)
+
+::goto one
+
+
+
+::set /p number1=Enter your name: 
+::set /p number2=ENter a number: 
+
+::echo %number1%
+::echo %number2%
+
+
+::set /a sum = number1 + number2
+::set /a dif = number1 - number2
+::set /a mul = number1 * number2
+::set /a div = number1 / number2
+::
+::echo %sum%
+::echo %dif%
+::echo %mul%
+::echo %div%
+
+
+::echo Hello World
+
+pause
