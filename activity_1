@@ -1,0 +1,55 @@
+@echo off
+
+:balik
+
+set /p num1=Enter a number: 
+set /p num2=Enter a number: 
+
+echo.
+echo Operator:
+echo Press 1 [Addition]
+echo Press 2 [Subtraction]
+echo Press 3 [Multiplication]
+echo Press 4 [Division]
+echo Press Any to Quit.
+echo.
+set /p opChoice=Choice: 
+echo.
+
+set /a sum = num1 + num2
+set /a difference = num1 - num2
+set /a product = num1 * num2
+set /a quotient = num1 / num2
+
+if %opChoice% equ 1 (
+    echo The sum of %num1% and %num2% is %sum%
+) else if %opChoice% equ 2 (
+    echo The difference of %num1% and %num2% is %difference%
+) else if %opChoice% equ 3 (
+    echo The product of %num1% and %num2% is %product%
+) else if %opChoice% equ 4 (
+    echo The quotient of %num1% and %num2% is %quotient%
+) else (
+    goto exit
+)
+
+echo.
+echo.
+
+set /p choose= Do you want to make another computation press [Y/Any key]: 
+
+if "%choose%"=="Y" (
+    cls
+    goto balik
+) else (
+    goto exit
+)
+
+:exit
+
+
+
+
+
+pause
+
